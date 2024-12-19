@@ -3,3 +3,6 @@
 *.pyproj
 *.sln
 *.ps1
+.vs/bot_lundi
+
+#I'm ignoring the Powershell scripts and batch files because they contain some information I don't feel like sharing. Besides, we're only focusing on the Python bot, nothing else.
