@@ -20,7 +20,9 @@ client = discord.Client(intents=discord.Intents.default())
 #Setting a variable name for the bot
 new_username = "Bot"
 
-#The role's ID on Discord. You need to find it yourself, I don't remember how I got but I'll update it later
+#The role's ID on Discord. 
+#To find the ID of the role you want to interact with, go in the server settings section, go to the desired role and click the 3 dots
+#Then copy the role ID and store it somewhere
 roleID = 572032048726933514
 
 #Getting the date, since the bot is supposed to send messages only on Mondays and Tuesdays
