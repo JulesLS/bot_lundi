@@ -4,5 +4,4 @@
 *.sln
 *.ps1
 .vs/
-
-#I'm ignoring the Powershell scripts and batch files because they contain some information I don't feel like sharing. Besides, we're only focusing on the Python bot, nothing else.
+secret_values.py 

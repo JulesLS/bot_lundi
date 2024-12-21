@@ -8,6 +8,9 @@ from discord.ext import commands
 from discord import Client
 from discord import guild
 
+#We created a file containing the secret values, so I can make this project entirely public without risk. For more info, refer to the README file.
+from secret_values import *
+
 
 #We setup a "default" bot
 client = discord.Client(intents=discord.Intents.default())
