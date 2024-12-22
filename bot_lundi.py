@@ -27,7 +27,6 @@ seto = open("seto_kaiba_1.webp")
 #Of course the token can't be given here, otherwise anyone would get MY token. 
 #The token needs to be accessed form another file, at the beginning of the python code (not done yet)
 token = secret_values.discord_token
-print(token)
 
 #Setting a variable name for the bot
 new_username = "Bot"
@@ -37,7 +36,7 @@ new_username = "Bot"
 #Then copy the role ID and store it somewhere
 #secret_values.tester_role_ID
 #secret_values.lol_role_ID
-roleID = secret_values.tester_role_ID
+roleID = secret_values.lol_role_ID
 
 #Getting the date, since the bot is supposed to send messages only on Mondays, Tuesdays and Thursdays
 dt = datetime.datetime.now()
@@ -57,6 +56,7 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 
 
+
 #Once again, client.event to open a test
 @client.event
 
@@ -71,7 +71,7 @@ async def on_message(message):
         #await msg.channel.send("C lundi et y a Dofus 3")
 
 #If the role with this ID is pinged, start the following sequence :
-    if "test" in message.content:
+    if roleID in message.content:
         #print("test détecté")
 #If it's send anywhere between midnight and 7am, then :
         if 0 <= int(dt.strftime('%H')) <= 7:
@@ -87,7 +87,7 @@ async def on_message(message):
             if dt.weekday() == 3:
                 await message.channel.send("C jeudi")
 
-datetime.date
+
 ##The command is commented as long as I haven't implementing getting the token from another file.
 ##See lines 15 to 18
 client.run(token)
