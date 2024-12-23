@@ -1,6 +1,6 @@
 # bot_lundi
 This is a Discord bot that says "It's monday" when you ping a specific role on Mondays.
-It's been upgraded to also say something on Tuesdays.
+It's been upgraded to also say something on Tuesdays, Thursdays, and when you ping too early in the morning.
 
 
 About the .gitignore file :
